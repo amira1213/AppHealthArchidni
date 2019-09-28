@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="My Health !"
+            android:textStyle="bold"
+            android:textColor="@color/colorRed"
+            android:textSize="28sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center"
+            android:text="Connectez-vous"
+            android:textColor="@color/colorRed"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Email"
+            android:textColor="@color/colorGreen"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editText_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="sans-serif-thin"
+                android:backgroundTint="@color/gray"
+                android:hint="email"
+                android:inputType="textEmailAddress"
+                android:textColor="#000"
+                android:textColorHighlight="#000"
+                android:textColorHint="@color/gray" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:hint="mot de passe"
+                android:fontFamily="sans-serif-thin"
+                android:id="@+id/editText_password"
+                android:backgroundTint="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:inputType="textPassword"
+                android:textColor="#000"
+                android:textColorHighlight="#000"
+                android:textColorHint="@color/gray" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/text_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textAllCaps="false"
+            android:textStyle="normal"
+            android:background="@drawable/shape_red_rounded"
+            android:padding="8dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/colorRed"
+            android:gravity="center"
+            android:text="Se connecter"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textAllCaps="true"
+                android:visibility="invisible"
+                android:text="Mot de passe oublié ? "
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_marginRight="16dp"
+                android:id="@+id/button_signup"
+                android:fontFamily="sans-serif-light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S'inscrire"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/text_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Paramètres"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            />
+    </LinearLayout>
+
+</LinearLayout>

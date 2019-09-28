@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="#EFEFEF"
+    android:orientation="vertical"
+    tools:context=".ui.main.MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <ScrollView
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFEFEF"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_hello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-thin"
+                    android:text="Bonjour Noureddine"
+                    android:textColor="@color/colorRed"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/image_disconnect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_exit_to_app_black_24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shape_white_rounded"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:text="Aujourd'hui"
+                    android:textColor="#000"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/text_weather_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Ciel dégagé"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/text_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Température : 40 degrées "
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/text_weather_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Plus de détails"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_start_workout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_green_rounded"
+                    android:padding="8dp"
+                    android:text="Commencer une séance de footing"
+                    android:textColor="#FFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/shape_white_rounded"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:text="Mes informations"
+                    android:textColor="#000"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/text_current_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Poids actuel : 64 Kg"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/text_current_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Taille : 165 Cm"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/text_imc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="IMC : 12.5"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/text_remarque"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Remarque : surpoids"
+                    android:textColor="#000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/shape_white_rounded"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:text="Rythme cardiaque"
+                    android:textColor="#000"
+                    android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/text_heartbeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_red_rounded"
+                    android:padding="8dp"
+                    android:text="Mesurer mon rythme cardiaque"
+                    android:textColor="#FFF" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/shape_white_rounded"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:layout_marginBottom="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:text="Cliniques et hopitaux à proximité"
+                    android:textColor="#000"
+                    android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/text_nearbyHospitals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_green_rounded"
+                    android:padding="8dp"
+                    android:text="Voir les cliniques et les hopitaux à proximité"
+                    android:textColor="#FFF" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
